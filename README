@@ -1,1 +1,3 @@
-Hello!
+Simple Perl script which, when called, shows the load average in titlebar of your terminal window.
+
+Useful if you work on a few servers and you need to monitor realtime load average.
