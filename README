@@ -1,3 +1,13 @@
 Simple Perl script which, when called, shows the load average in titlebar of your terminal window.
 
 Useful if you work on a few servers and you need to monitor realtime load average.
+
+Save this as a script called tl, and copy it to your ~/bin directory.
+
+When you’d like to have titlebar replaced with the name, load average, and current time of the machine you’re logged into, just run tl&
+
+When your job is finished, just do: killall tl before logging out.
+
+Or, if you want to automate this, you can try:
+
+$echo 'killall tl > /dev/null 2>&1' >> ~/.bash_logout
